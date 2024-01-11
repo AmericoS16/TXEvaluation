@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite
+	name="Evaluation"
+	verbose="1"
+>
+	<listeners>
+		<listener class-name="com.tx.listener.MyListener"></listener>
+	</listeners>
+	<test
+		name="Verify that the quantity of items on the cart icon is being correctly updated"
+	>
+		<classes>
+			<class name="com.tx.tests.ShopAmazonCart">
+			</class>
+		</classes>
+	</test>
+</suite>
